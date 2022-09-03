@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+
 body
 {
     margin: 0;
     padding: 0;
+    background-color: #4997d0;
 }
 
 p
@@ -18,7 +20,31 @@ ul
     padding: 0;
 }
 
+a, a:hover
+{
+    text-decoration: none;
+}
+
 /* COMMON */
+.p-cursor
+{
+
+}
+
+.p-flex
+{
+    display: flex;
+}
+
+.p-flex-align-center
+{
+    align-items: center;
+}
+
+.p-flex-jc-sb
+{
+    justify-content: space-between;
+}
 
 
 /* WRAPPER CLASS */
@@ -27,13 +53,30 @@ ul
     position: relative;
     
 }
-.p-wrapper
+.p-wrapper::before
 {
     content: '';
-    background: #f9b205;
+    background: #000;
     height: 100vh;
+    width: 25vw;
     position: absolute;
     z-index: -1;
+    filter: opacity(50%);
+}
+
+.textcolor
+{
+    color: white;
+}
+
+/* PAGE BACKGROUND */
+.dark-bg
+{
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -3;
 }
 
 
